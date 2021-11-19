@@ -1,0 +1,151 @@
+.s-container
+{
+    display: flex;
+    /* flex-direction:  ; */
+    height: 100vh;
+    /* border: 2px solid; */
+}
+
+.sc-left
+{
+    flex: 1;
+    justify-content: center;
+    /* position: relative; */
+    /* height:100vh; */
+    /* border: 2px solid blue; */
+}
+
+.scl-title
+{
+    font-size: 2.5rem;
+    color: cadetblue;
+    /* border: 1px solid; */
+    text-align: center;
+}
+.scl-progress
+{
+    /* display: flex; */
+    width: 60%;
+    height: 70%;
+    margin: 10% auto 0rem auto;
+    /* justify-content: center; */
+    /* background-color: black; */
+    /* margin:5rem auto 0px ; */
+    padding: 2rem 1rem;
+    /* color: white; */
+    font-size: 2rem;
+    border: 1px solid rgb(243, 243, 243);
+    border-radius: 2.5rem;
+    /* background-color: rgb(243, 243, 243); */
+    box-shadow: 3px 3px 10px rgb(228, 228, 228);
+}
+.scl-container
+{
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 0.8rem 0.5rem;
+    /* background-color: cornflowerblue; */
+
+}
+.sclp-name
+{
+    width: 20%;
+    font-size: 1.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+   
+}
+.sclp-bar
+{
+    /* flex:7; */
+    width: 65%;
+    margin: auto 0px;
+    padding: 0px 1rem;
+    /* background-color: brown; */
+   
+
+}
+.bar{
+    display: block;
+    background-color: rgb(236, 236, 236);
+    /* border: 2px solid; */
+    height: 0.8rem;
+    border-radius: 0.9rem;
+}
+.progress
+{
+    display: block;
+    height: 0.8rem;
+    border-radius: 0.9rem;
+    /* transition-delay: 2s; */
+}
+
+.sclp-percent
+{
+    /* flex:2; */
+    width: 15%;
+    text-align: center;
+    /* background-color: blueviolet; */
+}
+.sclp-more
+{
+    text-align: center;
+    /* border: 1px solid; */
+    /* width: 100%; */
+    margin-top: 2rem;
+    font-size: 2.6rem;
+}
+
+.sc-right
+{
+    flex: 1;
+    /* border: 1px solid; */
+    height: 100%;
+}
+.scr-container
+{
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    font-size: 2rem;
+    height: 100%;
+    /* padding: 5rem 5rem 0px; */
+    box-sizing: border-box;
+}
+.scrc-title
+{
+    text-align: center;
+    height: 10%;
+    font-size: 3rem;
+    font-weight: 500;
+
+    /* border: 2px solid; */
+
+}
+
+.scrc-content
+{
+    /* border: 2px solid; */
+    display: flex;
+    height: 30%;
+    /* box-sizing: border-box; */
+    /* justify-content: stretch; */
+    
+
+}
+.scrcc-left
+{
+    flex:1;
+    /* border: 1px solid red; */
+}
+.image
+{
+    width: 90%;
+    height: 100%;
+}
+.scrcc-right
+{
+
+    flex: 1;
+    margin: auto 0px auto 0px;
+    /* border:1px solid; */
+}

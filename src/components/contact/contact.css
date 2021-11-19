@@ -1,0 +1,170 @@
+.contact-container
+{
+    height: 100vh;
+    /* border: 1px solid; */
+}
+.cc-title
+{
+    font-size: 3rem;
+    height: 10%;
+    text-align: center;
+}
+
+.cc-flex
+{
+    display: flex;
+    font-size: 2rem;
+    /* border: 2px solid green; */
+    height: 90%;
+    width: 90%;
+    margin: 0px auto 0px auto;
+    /* overflow-y: hidden; */
+    /* box-sizing: border-box; */
+}
+.cc-left
+{
+    flex:1;
+    /* border: 2px solid; */
+    height: 100%;
+}
+.form{
+
+    width: fit-content;
+    padding: 2rem;
+    border-radius: 9px;
+    border: 2px solid gray;
+    /* margin: ; */
+    /* height: 100%; */
+    margin: 10rem  5rem auto;
+}
+.form-title
+{
+    margin-bottom: 1rem;
+}
+.form-container
+{
+    justify-content: center;
+    text-align: center;
+    /* border: 2px solid; */
+    /* width: 80%; */
+    /* height: 100%; */
+}
+.form input
+{
+    height: 2.5rem;
+    width: 26.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.8rem;
+    margin: auto 0px auto 0px;
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+input::placeholder
+{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+.form textarea
+{
+    resize: none;
+    font-size: 15px;
+    padding: 1rem;
+    
+}
+.form .form-button
+{
+
+    margin-top: 1rem;
+    border-radius: 10px;
+ transition: none;
+ transform: none;
+ background-color: rgb(28, 28, 206);
+
+}
+.form .form-button:hover
+{
+    background-color: rgb(23, 23, 172);
+}
+.form .form-button:active
+{
+    transform: scale(0.90);
+    /* transition: 2s; */
+}
+
+.cc-right
+{
+    flex:1;
+    /* border: 2px solid; */
+}
+.ccr-container
+{
+    /* border: 1px solid; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+.ccrc-title
+{
+    flex:1;
+    /* text-align: left; */
+    width: 100%;
+    margin-top: 20%;
+    font-size: 2.5rem;
+    text-align: center;
+    /* border: 1px solid; */
+
+   
+}
+.ccrc-social
+{
+    flex:11;
+    width: 100%;
+    /* margin-left: auto; */
+    /* border:1px solid */
+}
+.social-links
+{
+    /* border: 2px solid; */
+    width: 70%;
+    height: 90%;
+    /* text-align: center; */
+    /* align-items: center; */
+    margin:3rem auto 0 auto;
+}
+.link{
+    display: flex;
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+    /* border: 1px solid; */
+}
+.link .link-icon .fb , .link .link-icon .insta, .link .link-icon .github, .link .link-icon .linkedin
+{
+    color: black;
+}
+.link .link-icon .fb:hover
+{
+    color:#3b5998;
+}
+.link .link-icon .insta:hover
+{
+    color: #DD2A7B ;
+}
+.link .link-icon .github:hover
+{
+    color: #AD5C51 ;
+}
+.link .link-icon .linkedin:hover
+{
+    color:  #0077b5;
+}
+.link-name
+{
+    
+    /* border: 1px solid; */
+    /* height: 35px; */
+    font-size: 1.5rem;
+    margin-top:auto ;
+    margin-bottom: auto;
+    margin-left: 1rem;
+}

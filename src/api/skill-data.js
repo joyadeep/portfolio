@@ -1,0 +1,57 @@
+export const data=[
+    {
+     name:"React",
+     width:"80%",
+     color:"#61dbfb",
+     percent:"80%"
+    },
+    {
+        name:"Angular",
+        width:"50%",
+        color:" #dd1b16",
+        percent:"50%" 
+    },
+    {
+        name:"Bootstrap",
+        width:"40%",
+        color:"#563d7c",
+        percent:"40%"
+    },
+    {
+        name:"NodeJS",
+        width:"55%",
+        color:"#3c873a ",
+        percent:"55%"
+    },
+    {
+        name:"MongoDB",
+        width:"40%",
+        color:"#3FA037",
+        percent:"40%"
+    }
+    ,
+    {
+        name:"HTML5",
+        width:"80%",
+        color:"#e34c26",
+        percent:"80%"
+    },
+    {
+        name:"CSS3",
+        width:"75%",
+        color:"#2965f1",
+        percent:"75%"
+    },
+    {
+        name:"Javascript",
+        width:"70%",
+        color:"#f0db4f",
+        percent:"70%"
+    },
+    {
+        name:"Figma",
+        width:"20%",
+        color:"orange",
+        percent:"20%"
+    }
+]

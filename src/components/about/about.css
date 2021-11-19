@@ -1,0 +1,43 @@
+.a-container
+{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    /* border: 2px solid; */
+}
+.ac-title
+{
+    width: 100%;
+    height: fit-content;
+    /* display: flex; */
+    /* border: 2px solid; */
+    font-size: 5rem;
+    font-weight: 500;
+    /* justify-content: center; */
+    text-align: center;
+}
+.ac-body
+{
+    display: flex;
+    /* border: 2px solid green; */
+    height: 100%;
+}
+.ac-left
+{
+
+    flex: 1;
+    flex-direction: row;
+    /* border: 2px solid red; */
+}
+.acl-contents
+{
+    padding: 4rem 5rem 0rem;
+    font-size: 3rem;
+}
+
+.ac-right
+{
+    flex: 1;
+    /* border: 1px solid; */
+    /* border: 2px solid; */
+}
