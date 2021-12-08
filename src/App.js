@@ -1,18 +1,20 @@
 import React from "react";
-import { About } from "./components/about/About";
 import { Intro } from "./components/intro/Intro";
 import { Skills } from "./components/skills/Skills";
 import { Contact } from "./components/contact/Contact";
 import { Project } from "./components/project/Project";
+// import { Footer } from './components/footer/Footer';
+// import { Footer } from "./components/footer/Footer";
 const App=()=>
 {
   return(
     <>
+  
       <Intro/>
-      <About/>
       <Skills/>
       <Project/>
       <Contact/>
+      {/* <Footer/> */}
     </>
   )
 }

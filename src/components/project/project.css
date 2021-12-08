@@ -1,72 +1,76 @@
 .p-container
 {
-    display: grid;
+    /* border: 2px solid; */
     min-height: 100vh;
-    /* overflow-y: scroll; */
-    /* border: 2px solid red; */
-    grid-template-areas: auto;
-    grid-template-rows: 20% 80%;
+    display: grid;
+    grid-template-rows: 60px auto ;
+    text-align: center;
+    margin-bottom: 50px;
 }
 .pc-title
 {
-    /* border: 2px solid green; */
-    font-size: 3.5rem;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    /* height: 20%; */
+    font-size: 40px;
+    /* font-weight: 500; */
+    /* border: 2px solid; */
 }
-.pc-projects 
+.pc-list
 {
+    margin: 20px auto 20px auto;
+    width: 85%;
+    /* border: 3px solid red; */
     display: grid;
+    grid-template-columns: 30% 30% 30%;
     justify-content: space-between;
-    width: 90%;
-    /* overflow-y: scroll; */
-    margin: 0 auto;
-    grid-template-columns: 23% 23% 23% 23%;
-    grid-template-rows: 48% 48%;
-    grid-gap: 10px 0px;
+    grid-row-gap: 40px;
 }
-.project{
-    color: black;
-    text-decoration: none;
-    border-radius: 9px;
-    /* overflow: hidden; */
-    border: 2px solid rgb(240, 240, 240);
-   display: grid;
-   grid-template-areas: auto;
-   grid-template-rows: 60% 40%;
-    box-shadow: 3px 3px 10px rgb(240, 240, 240);
-    transition: 1.5s;
+.pc-list img{
+    /* z-index: 1; */
+    width: 100%;
+    height: 100%;
+    /* border: 3px solid green; */
+}
+
+.project
+{
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    /* width: 250px; */
+    /* border: 2px solid; */
+    transition: 1.5s all;
+    box-shadow: 5px 5px 10px rgb(179, 179, 179);
 }
 .project:hover
 {
-    transition: 1.5s;
-    transform: scale(1.1);
+    transform: translateY(-1rem);
+    transition:1.5s all;
 }
-
-.p-image img{
-    height:100% ;
-    width:100% ;
-    overflow: hidden;
-}
-.p-desc
+.info
 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    /* border:1px solid; */
+    /* z-index: 999; */
+    position:absolute;
+    top: 0;
+    font-size: 40px;
+    color: white;
+    background-color: rgba(0, 0,0, 0.1);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+   
 }
-
-.pd-title
+.info-title
 {
-    /* overflow: hidden; */
-    padding-top: 10px;
-    font-size: 2rem;
-    /* border: 1px solid; */
+    margin-top: 35%;
+    /* z-index: 2; */
 }
-.pd-desc
+.info-level
 {
-    padding-top: 1rem;
-    font-size: 1.5rem;
-    /* border: 1px solid; */
+    margin-top: 10px;
+    font-size: 15px;
+}
+.info-desc
+{
+    margin-top: 10px;
+    font-size: 20px;
 }

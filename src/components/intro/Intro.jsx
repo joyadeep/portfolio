@@ -22,7 +22,7 @@ const Intro = () => {
             </div>
             <div className="icl-buttons">
                 <button className='btn-moreme'>Download CV </button>
-                <button className='btn-hireme'>Hire me</button>
+                <button className='btn-hireme'><a href="#contact"> Hire me</a></button>
             </div>
           </div>
         </div>

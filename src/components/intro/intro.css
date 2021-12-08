@@ -2,6 +2,18 @@
 {
     height: 100vh;
     display: flex;
+    margin-bottom: 50px;
+}
+.ic-nav
+{
+    right: 20px;
+    text-align: right;
+    z-index:1;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    font-size: 40px;
+    /* border: 2px solid red; */
 }
 .ic-left
 {
@@ -66,18 +78,19 @@ button
 button:hover
 {
     background-color: rgb(68, 68, 230);
-    transform: translateY(-0.7rem);
+    transform: translateY(-0.5rem);
     transition: 1s;
 }
 .btn-moreme, .btn-hireme
 {
     background-color: darkblue;
 }
-/* .btn-hireme
-{
-    background-color: darkblue
-    ;
-} */
+
+.btn-hireme a{
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
 
 .ic-right
 {
@@ -142,3 +155,58 @@ button:hover
     /* display: flex; */
     /* align-items: center; */
 }
+
+/* mobile view */
+
+@media  screen and (max-width:480px) {
+    .i-container
+    {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .icl-wrapper{
+        height: 100%;
+        padding: 0rem;
+    }
+    .icl-buttons
+    {
+        visibility: hidden;
+    }
+    .intro-item
+    {
+        font-size: 25px;
+    }
+    .intro-wrapper
+    {
+        height: 35px;
+    }
+    
+}
+
+/* 
+@media  screen and (min-width:481px) and (max-width:767px)
+{
+    .i-container
+    {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .icl-wrapper{
+        height: 100%;
+        padding: 1rem;
+    }
+    .icl-buttons
+    {
+        visibility: hidden;
+    }
+    .intro-item
+    {
+        font-size: 25px;
+    }
+    .intro-wrapper
+    {
+        height: 35px;
+    }
+} */

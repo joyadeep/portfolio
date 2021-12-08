@@ -1,78 +1,69 @@
 import React from 'react';
 import './skills.css';
-import {data} from '../../api/skill-data';
-import Website from '../../assets/images/website.png'
-import Responsive from '../../assets/images/responsive.png';
-import Ecommerce from '../../assets/images/ecommerce.png';
+import { FaReact, FaHtml5, FaCss3, FaNodeJs, FaGitAlt, FaAngular, FaBootstrap } from "react-icons/fa";
+import {SiJavascript, SiMongodb, SiExpress, SiRedux} from 'react-icons/si';
+import { CgFigma } from 'react-icons/cg';
 export const Skills = () => {
     return (
        
         <>
             <div className="s-container">
+            <div className="sc-title">Technical Skills</div>
+            <div className="underline"></div>
+            <div className="skill-list">
+               <div className="skill">
+                   <div className="icon"> <FaReact color="#61dbfb" /> </div>
+                   <div className="icon-name"> React </div>
+               </div>
+               <div className="skill">
+               <div className="icon"> <FaAngular color="#dd1b16" /> </div>
+                   <div className="icon-name"> Angular </div>
+               </div>
+               <div className="skill">
+               <div className="icon"> <FaBootstrap color="#563d7c" /> </div>
+                   <div className="icon-name"> Bootstrap </div>
+               </div>
+               <div className="skill">
+               <div className="icon"> <FaHtml5 color="#f06529" /> </div>
+                   <div className="icon-name"> HTML 5 </div>
+               </div>
+               <div className="skill">
+               <div className="icon"> <FaCss3 color="2965f1"/> </div>
+                   <div className="icon-name"> CSS 3 </div>
+               </div>
+               <div className="skill">
+               <div className="icon"> <SiJavascript color="f7df1e"/> </div>
+                   <div className="icon-name"> Javascript </div>
+               </div>
+               <div className="skill">
+               <div className="icon"> <CgFigma color="rgb(30, 184, 63)"/> </div>
+                   <div className="icon-name"> Figma </div>
+               </div>
+               <div className="skill">
+               <div className="icon"> <FaNodeJs color="#3c873a" /> </div>
+                   <div className="icon-name"> NodeJS </div>
+               </div>
+               <div className="skill">
+               <div className="icon"> <SiMongodb color="589636"/> </div>
+                   <div className="icon-name"> MongoDB </div>
+               </div>
+
+               <div className="skill">
+               <div className="icon"> <FaGitAlt color="#f34f29" /> </div>
+                   <div className="icon-name"> Git / GitHub </div>
+               </div>
+               <div className="skill">
+               <div className="icon"> <SiExpress/> </div>
+                   <div className="icon-name"> ExpressJS </div>
+               </div>
+               <div className="skill">
+               <div className="icon"> <SiRedux color="#764abc" /> </div>
+                   <div className="icon-name"> Redux </div>
+               </div>
+            </div>
             
-                <div className="sc-left">
-                    
-                    <div className="scl-progress">
-                    <div className="scl-title">Tech I am familiar with</div>
-
-                    {
-                        data.map((item,index)=>
-                        (
-                            <div className="scl-container" key={index}>
-                            <div className="sclp-name">{item.name}</div>
-                            <div className="sclp-bar">
-                                <span className='bar'> <span className='progress' style={{width: item.width, backgroundColor: item.color}}></span></span>
-                            </div>
-                            <div className="sclp-percent"> {item.percent} </div>
-                            </div>
-     
-                        ))
-                    }
-
-                    <p className="sclp-more">still more to come</p>
-
-
-
-                    </div>
-                  
-                </div>
-
-                <div className="sc-right">
-                    <div className="scr-container">
-                        <div className="scrc-title">Things I can do</div>
-
-                        <div className="scrc-content">
-                            <div className="scrcc-left">
-                                <img src={Website} alt="image1" className="image" />
-                            </div>
-                            <div className="scrcc-right">
-                                Create a fully flex Website and Web Apps.
-                            </div>
-                        </div>
-
-                        <div className="scrc-content">
-                        <div className="scrcc-right">
-                                Create a fully responsive design and sites.
-                            </div>
-                            <div className="scrcc-left">
-                                <img src={Responsive} alt="image1" className="image" />
-                            </div>
-                           
-                        </div>
-
-                        <div className="scrc-content">
-                            <div className="scrcc-left">
-                                <img src={Ecommerce} alt="image1" className="image" />
-                            </div>
-                            <div className="scrcc-right">
-                                Create Full Stack web app like ecommerce.
-                            </div>
-                        </div>
-                        
-
-                    </div>
-                </div>
-                {/* </div> */}
+           
+               
             </div>
         </>
     )
