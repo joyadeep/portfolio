@@ -1,0 +1,27 @@
+.f-container
+{
+    height: 250px;
+    background-image: linear-gradient(90deg, #0f2027, #2c5364);
+}
+.f-container .contents
+{
+    /* border: 2px solid white; */
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    height: 100%;
+    /* margin-top: 60px; */
+}
+.author
+{
+    margin-top: 50px;
+}
+.tech-list{
+    /* border: 2px solid white; */
+    width: 200px;
+    display: grid;
+    font-size: 40px;
+    margin:0 auto;
+    margin-top: 20px;
+    grid-template-columns: auto auto;
+}

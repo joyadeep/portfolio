@@ -24,9 +24,7 @@
     width: 80%;
 
 }
-.skill{
-    /* border: 2px solid; */
-}
+
 .icon
 {
     margin-top: 30px;
@@ -49,5 +47,24 @@
     .sclp-more
     {
         visibility: hidden;
+    }
+}
+
+@media  screen and (max-width:480px)
+{
+
+    .skill-list
+    {
+        grid-template-columns: repeat(3,auto);
+        width: 90%;
+        /* margin-bottom: 0; */
+    }
+    .icon
+    {
+        font-size: 50px;
+    }
+    .icon-name
+    {
+        font-size: 17px;
     }
 }

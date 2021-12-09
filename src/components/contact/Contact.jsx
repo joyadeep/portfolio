@@ -1,9 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import {BsFacebook,BsInstagram,BsLinkedin,BsGithub} from 'react-icons/bs';
 
 import './contact.css';
 export const Contact = () => {
@@ -30,76 +27,42 @@ export const Contact = () => {
             <div className="contact-container">
                 <div className="cc-title">Get in touch</div>
                
-                <div className="cc-flex">
-                <div className="cc-left">
-                    <form  ref={formRef} onSubmit={submitForm} className='form'>
-                        <div className="form-container">
+                {/* <div className="cc-flex"> */}
+                <div className="cc-form">
+<div className="contact-form">
+
+<form  ref={formRef} onSubmit={submitForm} className='form'>
                             <p className="form-title">Mail Me</p>
                         <input type="text" name="name" placeholder='Name'/><br />
                         <input type="text" name="subject" placeholder='Subject' /><br />
                         <input type="email" name="email" placeholder="Email" /><br />
                         <textarea name="message"  cols="33" rows="10" placeholder="message"></textarea><br />
                         <button className='form-button'>send</button>
-                        </div>
- 
+                        {success && <div style={{color:"green"}}>!! Mail sent successfully !!</div>}
                     </form>
+                   
+</div>
+
+<div className="social-links">
+    <div className="links">
+        <p className="link-title">Say hello @</p>
+        <div className="link-list">
+           <div className="link"><a href="https://facebook.com/zoysince1997" target="_blank"><BsFacebook/></a></div>
+           <div className="link"><a href="https://instagram.com/zoysince1997" target="_blank"><BsInstagram/></a></div>
+           <div className="link"><a href="https://linkedin.com/in/zoysince1997" target="_blank"><BsLinkedin/></a></div>
+           <div className="link"><a href="https://github.com/joyadeep" target="_blank"><BsGithub/></a></div>
+
+        </div>
+    </div>
+    
+</div>
+
+                  
+
+
+
                 </div>
-                {success && "Thank you, I will reply soon"}
-            <div className="cc-right">
-                <div className="ccr-container">
-                    <div className="ccrc-title">
-                        Say Hello @
-                    </div>
-                    <div className="ccrc-social">
-                       <div className="social-links">
-                           <div className="link">
-
-
-
-
-
-                               <div className="link-icon">
-                               <a className='fb' href="http://facebook.com/zoysince1997" target="_blank" rel="noopener noreferrer">
-                                   < FacebookIcon style={{fontSize:40}}/>
-                               </a>
-                               </div>
-                               <div className="link-name">/zoysince1997</div>
-                           </div>
-
-                           <div className="link">
-                               <div className="link-icon">
-                               <a className='insta' href="http://instagram.com/zoysince1997" target="_blank" rel="noopener noreferrer">
-                                   <InstagramIcon style={{fontSize:40}}/>
-                               </a>
-                               </div>
-                               <div className="link-name">/zoysince1997</div>
-                           </div>
-
-                           <div className="link">
-                               <div className="link-icon">
-                               <a className='github' href="http://github.com/joyadeep" target="_blank" rel="noopener noreferrer">
-                                   < GitHubIcon style={{fontSize:40}}/>
-                               </a>
-                               </div>
-                               <div className="link-name">/joyadeep</div>
-                           </div>
-
-                           <div className="link">
-                               <div className="link-icon">
-                               <a className='linkedin' href="http://linkedin.com/in/zoysince1997" target="_blank" rel="noopener noreferrer">
-                                   < LinkedInIcon style={{fontSize:40}}/>
-                               </a>
-                               </div>
-                               <div className="link-name">/zoysince1997</div>
-                           </div>
-                           
-
-                       </div>
-                    </div>
-                </div>
-            </div>
-                </div>
-          
+                
             </div>
         </>
     )

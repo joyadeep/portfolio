@@ -86,7 +86,7 @@ button:hover
     background-color: darkblue;
 }
 
-.btn-hireme a{
+.btn-moreme a ,.btn-hireme a{
     color: white;
     text-decoration: none;
     font-size: 2.5rem;
