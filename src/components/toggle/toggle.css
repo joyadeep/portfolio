@@ -1,0 +1,28 @@
+.t-container
+{
+    position: fixed;
+    width: 60px;
+    height: 25px;
+    /* border:2px solid; */
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 25px;
+}
+.t-container img{
+    width: 25px;
+    height: 25px;
+}
+.t-button{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #999;
+    position: absolute;
+    cursor: pointer;
+    transition: 500ms all;
+}

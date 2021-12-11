@@ -47,10 +47,10 @@ export const Contact = () => {
     <div className="links">
         <p className="link-title">Say hello @</p>
         <div className="link-list">
-           <div className="link"><a href="https://facebook.com/zoysince1997" target="_blank"><BsFacebook/></a></div>
-           <div className="link"><a href="https://instagram.com/zoysince1997" target="_blank"><BsInstagram/></a></div>
-           <div className="link"><a href="https://linkedin.com/in/zoysince1997" target="_blank"><BsLinkedin/></a></div>
-           <div className="link"><a href="https://github.com/joyadeep" target="_blank"><BsGithub/></a></div>
+           <div className="link"><a href="https://facebook.com/zoysince1997" rel="noreferrer" target="_blank"><BsFacebook/></a></div>
+           <div className="link"><a href="https://instagram.com/zoysince1997" rel="noreferrer" target="_blank"><BsInstagram/></a></div>
+           <div className="link"><a href="https://linkedin.com/in/zoysince1997" rel="noreferrer" target="_blank"><BsLinkedin/></a></div>
+           <div className="link"><a href="https://github.com/joyadeep" rel="noreferrer" target="_blank"><BsGithub/></a></div>
 
         </div>
     </div>

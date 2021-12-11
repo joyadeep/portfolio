@@ -15,7 +15,7 @@ export const Project = () => {
                     <>
 
                         <a  href="#" className="project" key={index}>
-                            <img src="https://drive.google.com/file/d/0B1Dp12kmQknEZXNkU3JNSlNMcFJ2NXlYYW9vREJWSVFZa3Bv/view?usp=sharing&resourcekey=0-1alru4jWmoHC0Opo-wwjHg">
+                            <img alt="frontpage" src="https://drive.google.com/file/d/0B1Dp12kmQknEZXNkU3JNSlNMcFJ2NXlYYW9vREJWSVFZa3Bv/view?usp=sharing&resourcekey=0-1alru4jWmoHC0Opo-wwjHg">
 
                             </img>
 
