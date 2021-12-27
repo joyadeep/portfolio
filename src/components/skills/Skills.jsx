@@ -1,6 +1,6 @@
 import React from 'react';
 import './skills.css';
-import { FaReact, FaHtml5, FaCss3, FaNodeJs, FaGitAlt, FaAngular, FaBootstrap } from "react-icons/fa";
+import { FaReact, FaHtml5, FaCss3, FaNodeJs, FaGitAlt, FaAngular, FaSass } from "react-icons/fa";
 import {SiJavascript, SiMongodb, SiExpress, SiRedux} from 'react-icons/si';
 import { CgFigma } from 'react-icons/cg';
 export const Skills = () => {
@@ -19,9 +19,13 @@ export const Skills = () => {
                <div className="icon"> <FaAngular color="#dd1b16" /> </div>
                    <div className="icon-name"> Angular </div>
                </div>
-               <div className="skill">
+               {/* <div className="skill">
                <div className="icon"> <FaBootstrap color="#563d7c" /> </div>
                    <div className="icon-name"> Bootstrap </div>
+               </div> */}
+                <div className="skill">
+               <div className="icon"> <FaSass color="#c69" /> </div>
+                   <div className="icon-name"> SASS </div>
                </div>
                <div className="skill">
                <div className="icon"> <FaHtml5 color="#f06529" /> </div>

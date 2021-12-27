@@ -68,8 +68,8 @@ button
     font-size: 2.5rem;
     outline: none;
     border: transparent;
-    height: 4rem;
-    border-radius: 2.5rem;
+    height: 4.5rem;
+    border-radius: 5px;
     color: white;
     padding: 0.5rem 1.5rem;
     transition: 1s;
@@ -78,8 +78,9 @@ button
 button:hover
 {
     background-color: rgb(68, 68, 230);
-    transform: translateY(-0.5rem);
-    transition: 1s;
+    transform: translateY(-0.3rem);
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 .btn-moreme, .btn-hireme
 {
