@@ -24,3 +24,16 @@
     margin-top: 20px;
     grid-template-columns: auto auto;
 }
+
+@media screen and (max-width:480px){
+    .f-container .contents
+    {
+        font-size: 20px;
+    }
+    .tech-list
+    {
+        width: 100px;
+        font-size: 30px;
+        justify-content: space-between;
+    }
+}
