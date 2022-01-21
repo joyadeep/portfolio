@@ -1,21 +1,16 @@
 .contact-container
 {
-    /* margin-top: 50px; */
     min-height: 100vh;
     display: grid;
     grid-template-rows: 60px auto;
-    margin-bottom: 50px;
-    /* border: 2px solid; */
 }
 .cc-title
 {
-    /* border: 2px solid; */
     font-size: 40px;
     text-align: center;
 }
 .cc-form
 {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: row;
     font-size: 20px;
@@ -23,11 +18,9 @@
 .contact-form
 {
     flex: 1;
-    /* border: 2px solid; */
 }
 .social-links
 {
-    /* background-color: red; */
     height: 80%;
     margin: auto 0;
     background-image: url("https://images.pexels.com/photos/4659806/pexels-photo-4659806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
@@ -36,10 +29,8 @@
 .links{
     color: white;
     font-size: 20px;
-    /* border: 2px solid white; */
     width:80%;
     text-align: center;
-    /* margin: auto; */
     margin: 200px auto 0 auto;
 }
 .link-title
@@ -52,10 +43,8 @@
     font-size: 40px;
     width: 70%;
     margin: 0 auto;
-    /* border: 2px solid white; */
     display: grid;
     grid-template-columns: repeat(4,auto);
-    /* justify-content: space-between; */
 }
 .link-list a{
     color: rgb(195, 197, 199);
@@ -67,17 +56,15 @@
 
 .form{
     background-color: rgb(243, 243, 243);
-    /* border: 2px solid gray; */
     width: 50%;
     padding: 10px 20px;
     margin: 50px auto 0 auto;
-    /* align-items: center; */
     text-align: center;
     border-radius: 15px;
-    /* box-shadow: 5px 5px 10px gray; */
 }
 .form-title
 {
+    color: rgb(46, 13, 13);
     font-size: 40px;
     text-align: center;
     margin-bottom: 20px;

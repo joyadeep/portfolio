@@ -13,7 +13,7 @@ export const Footer = () => {
                         <div className="tech"><FaReact/></div>
                         <div className="tech"> <FaCss3/> </div>
                     </div>
-                    </div> 
+                    </div>
 
             </div>
         </>

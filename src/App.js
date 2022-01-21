@@ -15,7 +15,7 @@ const App=()=>
   <div style={{
     backgroundColor:dark?"#222":"white",
     color:dark?"white":"black",
-    transition:"500ms all"
+    transition:"700ms"
   }}>
 
     <Toggle/>

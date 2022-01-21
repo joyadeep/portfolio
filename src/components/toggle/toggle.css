@@ -26,3 +26,22 @@
     cursor: pointer;
     transition: 500ms all;
 }
+
+@media  screen and (max-width:480px) {
+.t-container
+{
+    height: 35px;
+    width: 65px;
+}
+/* .t-container img{ */
+    /* width:30px; */
+    /* height: 30px; */
+/* } */
+.t-button
+{
+    width: 31px;
+    height: 31px;
+}
+
+    
+}
