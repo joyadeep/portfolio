@@ -48,6 +48,8 @@
 }
 .info
 {
+    background-image: linear-gradient(to right,rgba(47, 152, 201, 0.507),rgba(0, 0, 0, 0.507));
+    background-size: cover;
     /* z-index: 999; */
     position:absolute;
     top: 0;

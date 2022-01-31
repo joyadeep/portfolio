@@ -12,9 +12,9 @@ const Intro = () => {
               <div className="intro-items">
                 <div className="intro-item">Web Developer</div>
                 <div className="intro-item">MERN Stack Developer</div>
-                <div className="intro-item">Technical Content Writer</div>
+                {/* <div className="intro-item">Technical Content Writer</div> */}
                 <div className="intro-item">Technophile</div>
-                <div className="intro-item">Freelancer</div>
+                {/* <div className="intro-item">Freelancer</div> */}
               </div>
             </div>
             <div className="icl-desc">

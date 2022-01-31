@@ -130,20 +130,20 @@ button:hover
 .intro-items
 {
     /* height: 50px; */
-    animation: animate 10s infinite ease-in-out alternate;
+    animation: animate 5s infinite ease-in-out alternate;
 }
 @keyframes animate {
-    25%{ 
+    /* 25%{ 
+        transform: translateY(-5rem);
+    } */
+    50%{ 
         transform: translateY(-5rem);
     }
-    50%{ 
-        transform: translateY(-10rem);
-    }
-    75%{ 
+    /* 75%{ 
         transform: translateY(-15rem);
-    }
+    } */
     100%{
-         transform: translateY(-20rem);
+         transform: translateY(-10rem);
     }
     
 }
