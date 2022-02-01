@@ -21,7 +21,7 @@ const Intro = () => {
                 Create your dream projects with me.
             </div>
             <div className="icl-buttons">
-                <button className='btn-moreme'><a href="https://jofibo.com/s/EmerqOLDC02PTPzNBacI0Q" rel="noreferrer" target="_blank">Download CV</a> </button>
+                <button className='btn-moreme'><a href="https://drive.google.com/file/d/1Wu_UPsA17D3hA0bra46P32XGNhNIXQod/view?usp=sharing" rel="noreferrer" target="_blank">Download CV</a> </button>
                 <button className='btn-hireme'><a href="#contact"> Hire me</a></button>
             </div>
           </div>
