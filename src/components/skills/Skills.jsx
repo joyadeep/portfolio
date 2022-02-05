@@ -1,7 +1,7 @@
 import React from 'react';
 import './skills.css';
 import { FaReact, FaHtml5, FaCss3, FaNodeJs, FaGitAlt, FaAngular, FaSass } from "react-icons/fa";
-import {SiJavascript, SiMongodb, SiExpress, SiRedux} from 'react-icons/si';
+import {SiJavascript, SiMongodb,SiTailwindcss, SiExpress, SiRedux} from 'react-icons/si';
 import { CgFigma } from 'react-icons/cg';
 export const Skills = () => {
     return (
@@ -32,12 +32,16 @@ export const Skills = () => {
                    <div className="icon-name"> HTML 5 </div>
                </div>
                <div className="skill">
-               <div className="icon"> <FaCss3 color="2965f1"/> </div>
+               <div className="icon"> <FaCss3 color="#2965f1"/> </div>
                    <div className="icon-name"> CSS 3 </div>
                </div>
                <div className="skill">
-               <div className="icon"> <SiJavascript color="f7df1e"/> </div>
+               <div className="icon"> <SiJavascript color="#f7df1e"/> </div>
                    <div className="icon-name"> Javascript </div>
+               </div>
+               <div className="skill">
+               <div className="icon"> <SiTailwindcss color="#79c2fa"/> </div>
+                   <div className="icon-name"> tailwindcss </div>
                </div>
                <div className="skill">
                <div className="icon"> <CgFigma color="rgb(30, 184, 63)"/> </div>

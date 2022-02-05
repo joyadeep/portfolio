@@ -2,6 +2,11 @@
 // import Fakestore from "../assets/images/fakestore.png";
 export const project_data=[
     {
+        name:"Nflix",
+        desc:"description of movies like IMDB",
+        href:"https://joyadeep.github.io/nflix"
+    },
+    {
         name:"Fakestore",
         desc:"e-commerce web app with redux",
         href:"https://joyadeep.github.io/fakestore",
