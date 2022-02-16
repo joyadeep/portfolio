@@ -1,9 +1,11 @@
 .s-container
 {
     margin-top: 10px;
-    height: 100vh;
+    height: fit-content;
     /* border: 2px solid; */
     text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
 }
 .sc-title
 {
