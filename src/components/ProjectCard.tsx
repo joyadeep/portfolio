@@ -5,7 +5,6 @@ import { Badge } from './ui/badge'
 import Link from 'next/link'
 import { Star } from "lucide-react";
 import ActionTooltip from './ActionTooltip'
-import {Github} from "lucide-react";
 
 type Props = {
     id: number;
@@ -33,7 +32,7 @@ const ProjectCard = ({ project }: Iproject) => {
             }
             <Link href={project.link} target='_blank'>
                 <CardContent className='px-0 pb-3 '>
-                    <div className='relative h-44'>
+                    <div className='relative h-44 2xl:h-60'>
                         <Image src={project.image} alt='' fill className='object-cover' />
                     </div>
                     <div className='p-2'>
@@ -46,7 +45,7 @@ const ProjectCard = ({ project }: Iproject) => {
                         <div className='flex gap-2 flex-wrap mt-4'>
                             {
                                 project.tags.map((tag, index) => (
-                                    <Badge key={index} variant={'outline'} className='rounded-full'>#{tag}</Badge>
+                                    <Badge key={index} variant={'secondary'} className='rounded-full font-light'>#{tag}</Badge>
                                 ))
                             }
 

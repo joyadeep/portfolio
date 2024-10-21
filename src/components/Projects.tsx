@@ -87,7 +87,7 @@ const projects:projects[]=[
     description:"Ratn intech landing page",
     tags:["Next.js","Tailwind CSS","Typescript","Freelance"],
     category:"frontend",
-    link:"https://ratnaintch.com.np",
+    link:"https://ratnaintech.com.np",
     github:""
   }
 

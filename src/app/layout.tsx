@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import {Poppins} from "next/font/google"
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import GsapConfig from "@/configs/gsap.config";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -13,6 +15,8 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+const poppins = Poppins({ weight: ["300", "400", "500", "600", "700", "800", "900"], subsets: ["latin"] });
 
 export const metadata:Metadata = {
   generator: "Next.js",
@@ -46,9 +50,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={poppins.className}
       >
-        {/* <GsapConfig /> */}
+        <GsapConfig />
         {/* <ThemeProvider
           attribute='class'
           defaultTheme='light'

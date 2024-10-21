@@ -131,7 +131,7 @@ const Testimonial = () => {
               </DialogHeader>
               <form onSubmit={handleSubmit} className="grid gap-4 py-4">
                 <div className="flex gap-3">
-                <div>
+                <div className="flex-1">
                   <Label htmlFor="name">Name</Label>
                   <Input 
                   required
@@ -140,7 +140,7 @@ const Testimonial = () => {
                     onChange={handleChange}
                   />
                 </div>
-                <div>
+                <div className="flex-1">
                   <Label htmlFor="email">Email</Label>
                   <Input
                   required
