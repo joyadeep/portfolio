@@ -8,11 +8,11 @@ type Props = {}
 
 const page = (props: Props) => {
   return (
-    <div className='w-full min-h-screen bg-slate-800 p-5 flex gap-5 flex-wrap'>
-        <Experience/>
-        <About/>
+    <div className='w-full h-screen bg-slate-800 p-5 grid grid-cols-12 grid-rows-12 grid-flow-dense gap-4'>
+        {/* <Experience/> */}
+        {/* <About/> */}
+        {/* <Mail/> */}
         <Skills/>
-        <Mail/>
     </div>
   )
 }
