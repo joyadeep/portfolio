@@ -14,8 +14,8 @@ const TestimonialCard = ({testimonial}: Props) => {
         <CardContent>
     <div className='relative w-20 h-20 mx-auto'>
       {
-        !testimonial.image? <User2 size={78} /> :
-      <Image src={testimonial.image} alt='' fill className='mx-auto object-cover object-top rounded-full' />
+        !testimonial.image? <User2 size={78} className='mx-auto object-cover object-top rounded-full bg-gray-300' /> :
+      <Image src={testimonial.image } alt='' fill className='mx-auto object-cover object-top rounded-full' />
       }
     </div>
     <div className='text-center'>

@@ -17,7 +17,6 @@ export const GET = async (req: NextRequest) => {
       type === "active"
         ? await db.testimonial.findMany({ where: { status: true } })
         : await db.testimonial.findMany();
-    console.log("result", result);
     if (result.length === 0) {
       return NextResponse.json({ message: "no data found !" }, { status: 404 });
     }

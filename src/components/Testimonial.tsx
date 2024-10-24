@@ -70,7 +70,7 @@ const Testimonial = () => {
       try {
         const result = await axios.get("/api/testimonial?type=active");
         if (result.status === 200) {
-          setTestimonials(result.data.result)
+          setTestimonials(result.data.data)
         }
         else throw new Error("something went wrong!")
       } catch (error) {
@@ -86,6 +86,8 @@ const Testimonial = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmiting, setIsSubmitting] = useState(false)
+
+
 
  
  
@@ -134,7 +136,7 @@ const Testimonial = () => {
       <Dialog open={isOpen} onOpenChange={setIsOpen} modal={true}>
         <DialogTrigger asChild>
 
-          <Button variant="outline" className="flex ml-auto w-fit gap-1 text-sm mt-2 md:mt-0" onClick={() => setIsOpen(true)}><Plus size={20} /> Add your voice</Button>
+          <Button variant="outline" className="flex ml-auto w-fit gap-1 text-sm mt-2 md:mt-0 mb-5" onClick={() => setIsOpen(true)}><Plus size={20} /> Add your voice</Button>
 
         </DialogTrigger>
         <DialogContent className="dark:border-slate-500 w-full">
