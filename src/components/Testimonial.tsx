@@ -23,6 +23,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "./ui/form";
+import { cn } from "@/lib/utils";
 
 export interface Itestimonial {
   _id: string;
@@ -48,7 +49,7 @@ const formSchema = z.object({
     'Only .jpg, .jpeg, .png and .webp formats are supported.'
   )
   ,
-  message: z.string().min(1,{message:"Message is required"}).max(250,{message:"Message limit exceeded. (limit:200)"}),
+  message: z.string().min(1,{message:"Message is required"}).max(200,{message:"Message limit exceeded. (limit:200)"}),
 })
 
 const Testimonial = () => {
@@ -85,7 +86,12 @@ const Testimonial = () => {
   const [testimonials, setTestimonials] = useState<Itestimonial[]>([]);
   const [isOpen, setIsOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(false);
-  const [isSubmiting, setIsSubmitting] = useState(false)
+  const [isSubmiting, setIsSubmitting] = useState(false);
+
+
+  const messageLength =form.watch("message","")
+  
+
 
 
 
@@ -168,7 +174,7 @@ const Testimonial = () => {
                   render={({ field }) => (
                     <FormItem className="flex-1">
                       <div className="flex justify-between items-center">
-                      <FormLabel>Email</FormLabel>
+                      <FormLabel className="required">Email</FormLabel>
                       <FormMessage className="text-xs leading-3"/>
                       </div>
                       <FormControl>
@@ -184,7 +190,7 @@ const Testimonial = () => {
                 render={({ field }) => (
                   <FormItem className="flex-1">
                     <div className="flex justify-between items-center">
-                      <FormLabel>Designation</FormLabel>
+                      <FormLabel className="required">Designation</FormLabel>
                       <FormMessage className="text-xs leading-3"/>
                       </div>
                     <FormControl>
@@ -219,13 +225,15 @@ const Testimonial = () => {
                 render={({ field }) => (
                   <FormItem className="flex-1">
                     <div className="flex justify-between items-center">
-                      <FormLabel>Message</FormLabel>
+                      <FormLabel className="required">Message</FormLabel>
                       <FormMessage className="text-xs leading-3"/>
                       </div>
                     <FormControl>
                       <Textarea rows={4} {...field} className="resize-none" />
                     </FormControl>
+                    <p className={cn("text-xs text-right", form.formState.errors.message && "text-red-500"  )}>{messageLength.length}/200</p>
                   </FormItem>
+                  
                 )}
               />
               <Button disabled={isSubmiting}>{isSubmiting && <Loader2 className="animate-spin"/>} Create</Button>
