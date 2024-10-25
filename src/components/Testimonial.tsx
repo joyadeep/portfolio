@@ -93,7 +93,7 @@ const Testimonial = () => {
   
 
 
-
+// TODO : Add required * in required field and enhance error message text 
 
  
  
@@ -248,7 +248,7 @@ const Testimonial = () => {
               spaceBetween={20}
               loop={true}
               autoplay={{
-                delay: 1000,
+                delay: 5000,
                 disableOnInteraction: false,
               }}
               modules={[Autoplay]}
@@ -278,7 +278,7 @@ const Testimonial = () => {
                 spaceBetween={20}
                 loop={true}
                 autoplay={{
-                  delay: 1000,
+                  delay: 3000,
                   disableOnInteraction: false,
                 }}
                 modules={[Autoplay]}
