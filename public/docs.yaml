@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info:
+  title: Portfolio API Documentation
+  description: Portfolio API Documentation
+  version: 1.0.0
+
+  servers:
+    - url: http://localhost:3000
+      description: Development Server
+
+    - url: https://joyadeep.com.np
+      description: Production Server
+
+  paths:
+    /api/testimonial:
+      get:
+        summary: Get All Testimonial
+        description: Get All Testimonial
+        tags:
+          - Testimonial
+        responses:
+          "200":
+            description: Success
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                    name:
+                      type: string
+                    designation:
+                      type: string
+                    image:
+                      type: string
+                    message:
+                      type: string
+                    status:
+                      type: boolean
+                  

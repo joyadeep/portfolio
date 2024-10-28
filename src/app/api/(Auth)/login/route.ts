@@ -51,7 +51,7 @@ export const POST = async (req: NextRequest) => {
     const token = await generateToken(user);
 
     const response = NextResponse.json(
-      { message: "success", data: token },
+      { message: "user logged in successfully" },
       { status: 200 }
     );
 
